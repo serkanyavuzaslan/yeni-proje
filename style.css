@@ -1,0 +1,274 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+  background-image: url(img/background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; /* Görselin ekranı kaplaması */
+  background-position: center; /* Görseli merkezde tutar */
+  min-height: 100vh; /* Ekran yüksekliğini minimum 100vh yapar */
+  overflow: hidden; /* Taşmayı engelle */
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+
+.header .baslik h2{
+text-transform: uppercase;
+letter-spacing: 2px;
+font-size: 27px;
+cursor: pointer;
+font-weight: 900;
+color: white;
+text-shadow: rgb(0, 0, 0) 0px 5px 7px;
+user-select: none;
+}
+.header .baslik h2:hover{  
+    transform: translateY(-3px);
+    color: rgb(228, 99, 0);
+    transition: .5s;
+}
+
+
+.header .links{
+    margin-right: 200px;
+}
+.header .links ul{
+    display: flex;
+}
+ .header .links ul li{
+    margin-left: 20px;
+ }
+
+ .header .links ul li a{
+    color: white;
+    font-weight: 500;
+    text-shadow: rgb(0, 0, 0) 0px 5px 7px;
+    user-select: none;
+ }
+.header .links ul li a:hover{
+    color: rgb(228, 99, 0);    
+    transition: .3s;
+    
+}
+
+ .header .links ul li:hover{
+    transform: translateY(-1px);
+    transition: .4s;
+ }
+
+ .header .icons i{
+    margin-left: 20px;
+    font-size: 17px;
+    cursor: pointer;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 0px 5px 7px;
+    user-select: none;
+ }
+ .header .icons i:hover{
+    color: rgb(228, 99, 0);
+    transition: .3s;
+ }
+
+ .main{
+    position: absolute;
+    top: 32%;
+    left: 2%;
+ }
+
+ .main .left .baslik1 h1{
+    color: white;
+    margin-bottom: 30px;
+    text-shadow: rgb(0, 0, 0) 0px 5px 7px;
+    user-select: none;
+    
+ }
+
+ .main .left .baslik1 p{
+    color: white;
+    font-weight: 550;
+    text-shadow: rgb(0, 0, 0) 0px 5px 7px;
+    user-select: none; 
+    
+            
+ }
+
+ .main .right .button button{
+    padding: 25px 45px;
+    position: relative;
+    top: 50px;
+    left: 250px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(225, 58, 3);
+    user-select: none;
+   
+ }
+
+
+ .main .right .button button:hover{
+    background-color: rgb(141, 38, 0);
+    box-shadow: rgb(0, 0, 0) 0px 5px 20px;
+    text-shadow: rgb(255, 255, 255) 0px 0px 10px, 0px 0px 20px, 0px 0px 40px, 0px 0px 80px ;
+    transition: .6s;
+ }
+
+
+ 
+ .hamburger-menu{
+   position: relative;
+   display: inline-block;
+ }
+
+ .hamburger-icon{
+   font-size: 30px;
+   cursor: pointer;
+   background-color: transparent;
+   border: none;
+   color: #333;
+
+ }
+
+ .menu-items{
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+   display: none; 
+   position: absolute;
+   background-color: #f9f9f9;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   width: 200px;
+ }
+
+ .menu-items li{
+   padding: 12px 16px;
+ }
+
+ menu-items li a{
+   text-decoration: none;
+   color: black;
+   display: block;
+   font-size: 18px;
+ }
+
+ .menu-items li a:hover{
+   background-color: #ddd;
+ }
+ 
+
+ /* Tablet için medya sorgusu */
+@media (max-width: 768px) {
+   .header {
+     flex-direction: column;
+     text-align: center;
+   }
+ 
+   .links ul {
+     flex-direction: column;
+   }
+ 
+   .links ul li {
+     margin: 10px 0;
+   }
+ 
+   .main {
+     flex-direction: column;
+   }
+ 
+   .left, .right {
+     width: 100%;
+     text-align: center;
+   }
+ 
+   .left .baslik1 h1 {
+     font-size: 28px;
+   }
+ 
+   .left .baslik1 p {
+     font-size: 16px;
+   }
+ 
+   .right .button button {
+     font-size: 16px;
+     padding: 10px 20px;
+   }
+ }
+ 
+ /* Telefon için medya sorgusu */
+ @media (max-width: 480px) {
+   .header {
+     padding: 10px;
+   }
+ 
+   .baslik h2 {
+     font-size: 20px;
+   }
+ 
+   .icons i {
+     font-size: 20px;
+   }
+ 
+   .main {
+     padding: 10px;
+   }
+ 
+   .left .baslik1 h1 {
+     font-size: 24px;
+   }
+ 
+   .left .baslik1 p {
+     font-size: 14px;
+   }
+ 
+   .right .button button {
+     font-size: 14px;
+     padding: 8px 16px;
+   }
+ } 
+
+ /* Tablet için medya sorgusu */
+@media (max-width: 768px) {
+   body {
+     background-size: cover; /* Daha küçük ekranlarda arka plan görüntüsünü sığdır */
+     height: auto; /* Yüksekliği otomatik yaparak taşmayı engeller */
+     padding: 20px;
+   }
+ 
+   .right .button button {
+     font-size: 16px; /* Buton yazı boyutunu küçült */
+     padding: 12px 25px;
+   }
+ }
+ 
+ /* Telefon için medya sorgusu */
+ @media (max-width: 480px) {
+   body {
+     background-size: cover; /* Küçük ekranlarda arka planı tam ekran yap */
+     height: auto;
+     padding: 10px;
+   }
+ 
+   .right .button button {
+     font-size: 14px; /* Telefon ekranı için buton yazı boyutunu daha da küçült */
+     padding: 10px 20px;
+     width: 100%; /* Butonu tam genişlik yaparak küçük ekranlarda taşmayı önler */
+   }
+ }
+

@@ -1,0 +1,94 @@
+.login{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.login form{
+    position: absolute;
+    top: 125px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: black 0px 5px 15px;
+}
+
+.login form .formGroup{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.login form .formGroup input{
+    width: 100%;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0px 0px 0px 10px;
+    font-weight: 200;
+    font-family: "Josefin Sans", sans-serif;
+    
+}
+
+.login form .formGroup span{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 7px;
+    transition:all .5s;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.login form .formGroup input:focus ~ span, .login form .formGroup input:valid ~ span{
+ transform: translateY(-19px);
+ left: 22px;
+ background: rgba(0, 0, 0, 0.2);
+ border-radius: 10px;
+ font-size: 10px;
+}
+
+
+.login form .btnGroup {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login form .btnGroup a{
+    color: white;
+    font-weight: 400;
+    font-family: "Josefin Sans", sans-serif;
+    transition: all .3s;
+    border-bottom: transparent solid 1px;
+    align-self: flex-end;
+}
+.login form .btnGroup a:hover{
+    border-bottom: 1px solid white;
+}
+
+.login form .btnGroup button{
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: .9rem;
+    font-weight: 800;
+    transition: all .3s;
+}
+.login form .btnGroup button:hover{
+    background: rgba(0, 0, 0, 0.4);
+    font-weight: 600;
+
+}

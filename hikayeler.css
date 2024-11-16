@@ -1,0 +1,308 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    /* background-color: rgb(201, 241, 201); */
+    background: url(img/background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /*Görselin ekranı kaplaması */
+    background-position: center; /* Görseli merkezde tutar */
+    min-height: 100vh; 
+    /* overflow: hidden;  */
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px;
+    
+}
+
+.header .baslik h2{
+text-transform: uppercase;
+letter-spacing: 2px;
+font-size: 27px;
+cursor: pointer;
+font-weight: 900;
+color: white;
+text-shadow: rgb(0, 0, 0) 2px 8px 17px;
+user-select: none;
+}
+.header .baslik h2:hover{  
+    transform: translateY(-3px);
+    color: rgb(228, 99, 0);
+    transition: .5s;
+}
+
+
+.header .links{
+    margin-right: 200px;
+    visibility: hidden;
+}
+.header .links ul{
+    display: flex;
+}
+ .header .links ul li{
+    margin-left: 20px;
+ }
+
+ .header .links ul li a{
+    color: white;
+    font-weight: 500;
+    text-shadow: rgb(0, 0, 0) 0px 5px 7px;
+    user-select: none;
+ }
+.header .links ul li a:hover{
+    color: rgb(228, 99, 0);
+    transition: .3s;
+    
+}
+
+ .header .links ul li:hover{
+    transform: translateY(-1px);
+    transition: .4s;
+ }
+
+ .header .icons i{
+    margin-left: 20px;
+    font-size: 17px;
+    cursor: pointer;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 0px 5px 7px;
+    user-select: none;
+ }
+ .header .icons i:hover{
+    color: rgb(228, 99, 0);
+    transition: .3s;
+ }
+
+
+ .container, .container2 {
+    display: flex;
+    gap: 0px; /* Kutucuklar arasındaki boşluk */
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.box {
+    background-color: #a42400; /* Kutucuk arka plan rengi */
+    width: 350px; /* Genişlik */
+    height: 420px; /* Yükseklik */
+    box-shadow: black 0px 3px 15px;
+    border-radius: 12px;
+    
+}
+
+
+/* KUTUCUKLAR */
+
+.container2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.hikayeTurleri h2{
+    text-shadow: black 0px 5px 15px;
+    position: relative;
+    margin-bottom: -25px;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: 700;
+    user-select: none;
+    text-transform: uppercase;
+    /* letter-spacing: 1px; */
+    /* text-shadow: black 0px 1px 5px; */
+    user-select: none;
+    color: white;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 700;
+    user-select: none;
+    text-transform: uppercase;
+    /* letter-spacing: 1px; */
+    /* text-shadow: black 0px 1px 5px; */
+    user-select: none;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.container .box .image{
+    overflow: hidden;
+}
+
+.container .box .image img{
+    border-radius: 10px;
+    margin-left: 24px;
+    margin-top: 19px;
+    width: 300px;
+    height: 185px;
+    user-select: none;
+    transition:all .3s;
+    cursor: pointer;
+    
+   
+}
+.container .box .image:hover img{
+    scale: 103%;
+    border-radius: 15px;
+}
+
+.container .box .baslik h2{
+    margin: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    color: white;
+    border-bottom: rgb(255, 255, 255) solid 1px;
+    user-select: none;
+    font-family: "Afacad Flux", sans-serif;
+    letter-spacing: 1.5px;
+}
+.container .box .ozet p{
+    text-align: center;
+    user-select: none;
+    color: white;
+    font-weight: 350;
+    font-size: 17px;
+    font-family: "Afacad Flux", sans-serif;
+}
+.container .box .btnHikayeler button{
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    /* background: linear-gradient(to right, #ff7e5f, #feb47b); */
+    background: linear-gradient(to right, rgb(255, 64, 0), rgb(91, 24, 0));
+    /* box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); */
+    color: white;
+    font-weight: 500;
+    display: flex;
+    margin-left: 200px;
+    margin-top: 60px;
+    user-select: none;
+    transition: all 0.7s;
+    
+    
+}
+.container .box .btnHikayeler button i{
+    position: relative;
+    left: 5px;
+    top: 2px;
+    color: white
+}
+.container .box .btnHikayeler button:hover{
+    transform: translateX(3px);
+    font-weight: 550;
+    background: linear-gradient(to right,rgb(91, 24, 0), rgb(225, 64, 0));
+    /* box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); */
+    
+}
+.container .box .bilgiKismi span{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 25px;
+    font-weight: 250;
+    font-size: 13px;
+    user-select: none;
+    color: white;
+    font-family: "Afacad Flux", sans-serif;
+}
+
+/* İKİNCİ KISIM */
+
+.container2 .box .image{
+    overflow: hidden;
+}
+
+.container2 .box .image img{
+    border-radius: 5px;
+    margin-left: 23px;
+    margin-top: 15px;
+    width: 300px;
+    height: 185px;
+    user-select: none;
+    transition:all .3s;
+    cursor: pointer;
+   
+}
+.container2 .box .image:hover img{
+    scale: 104%;
+    border-radius: 5px;
+}
+
+
+.container2 .box .baslik h2{
+    margin: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    color: black;
+    border-bottom: black solid 1px;
+    user-select: none;
+}
+.container2 .box .ozet p{
+    text-align: center;
+    user-select: none;
+    color: black;
+    font-weight: 350;
+    font-size: 15px;
+}
+.container2 .box .btnHikayeler button{
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    /* background: linear-gradient(to right, #ff7e5f, #feb47b); */
+    background: linear-gradient(to right, rgb(225, 58, 3), rgb(141, 38, 0));
+    /* box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); */
+    color: white;
+    font-weight: 500;
+    display: flex;
+    margin-left: 200px;
+    margin-top: 65px;
+    user-select: none;
+    transition: all 0.5s;
+}
+
+.container2 .box .btnHikayeler button i{
+    position: relative;
+    left: 5px;
+    top: 2px;
+    color: white
+}
+
+.container2 .box .btnHikayeler button:hover{
+    transform: translateX(3px);
+    font-weight: 550;
+    background: linear-gradient(to right,rgb(141, 38, 0), rgb(225, 58, 3));
+    /* box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); */
+}
+
+.container2 .box .bilgiKismi span{
+    position: absolute;
+    margin-top: 85px;
+    margin-left: 25px;
+    font-weight: 250;
+    font-size: 13px;
+    user-select: none;
+}
+
+
+
+
+
+
+
+
+
+
+

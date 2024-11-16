@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Kısmı -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="login.css" />
+    <!-- Font-Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="/img/logo.jpg" type="image/x-icon" >
+    <title>Dijital Hikaye Kitabı</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="baslik">
+        <h2>Dijital Hikaye Kitabı</h2>
+      </div>
+      <div class="links">
+        <ul>
+          <li><a href="index.html">Anasayfa</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+      </div>
+      <div class="icons">
+        <a href="login.html"><i class="fa-regular fa-user"></i></a>
+        <i class="fa-regular fa-image"></i>
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+      </div>
+    </header>
+
+    <!-- <div class="login">
+      <form>
+        <div class="formGroup">
+          <input type="text" id="loginUsername" required />
+          <span>Kullanıcı Adı *</span>
+        </div>
+
+        <div class="formGroup">
+          <input type="password" id="loginPassword" required />
+          <span>Şifre *</span>
+        </div>
+
+        <div class="btnGroup">
+          <a href="signup.html">Aramızda katılmak için tıkla!</a>
+          <a href="hikayeler.html"> <button>Giriş Yap</button> </a>
+        </div>
+      </form>
+    </div> -->
+
+    
+    <div class="login">
+      <form id="loginForm">
+          <div class="formGroup">
+              <input type="text" id="loginUsername" required />
+              <span>Kullanıcı Adı *</span>
+          </div>
+
+          <div class="formGroup">
+              <input type="password" id="loginPassword" required />
+              <span>Şifre *</span>
+          </div>
+
+          <div class="btnGroup">
+              <a href="signup.html">Aramızda katılmak için tıkla!</a>
+              <button type="button" id="loginButton">Giriş Yap</button>
+          </div>
+      </form>
+  </div>
+
+  <script>
+      document.getElementById("loginButton").addEventListener("click", function() {
+          const enteredUsername = document.getElementById("loginUsername").value;
+          const enteredPassword = document.getElementById("loginPassword").value;
+
+          // localStorage'da saklanan kullanıcı bilgilerini al
+          const savedUsername = localStorage.getItem("username");
+          const savedPassword = localStorage.getItem("password");
+
+          // Kullanıcı adını ve şifreyi doğrula
+          if (enteredUsername === savedUsername && enteredPassword === savedPassword) {
+              alert("Giriş başarılı!");
+              window.location.href = "hikayeler.html"; // Başarılı girişte hikayeler sayfasına yönlendir
+          } else {
+              alert("Kullanıcı adı veya şifre hatalı.");
+          }
+      });
+  </script>
+
+
+  </body>
+</html>
