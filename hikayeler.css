@@ -90,17 +90,16 @@ user-select: none;
     padding-top: 50px;
 }
 
+/* KUTUCUKLAR */
+
 .box {
-    background-color: #a42400; /* Kutucuk arka plan rengi */
+    background-color: #a42400;; 
     width: 350px; /* Genişlik */
     height: 420px; /* Yükseklik */
     box-shadow: black 0px 3px 15px;
     border-radius: 12px;
     
 }
-
-
-/* KUTUCUKLAR */
 
 .container2{
     padding-top: 50px;
@@ -121,6 +120,7 @@ user-select: none;
     /* text-shadow: black 0px 1px 5px; */
     user-select: none;
     color: white;
+    
 }
 
 h2{
@@ -148,25 +148,26 @@ h2{
     width: 300px;
     height: 185px;
     user-select: none;
-    transition:all .3s;
+    transition:all .7s;
     cursor: pointer;
     
    
 }
 .container .box .image:hover img{
-    scale: 103%;
+    scale: 107%;
     border-radius: 15px;
 }
 
 .container .box .baslik h2{
     margin: 5px;
     text-transform: uppercase;
-    letter-spacing: 0px;
     color: white;
-    border-bottom: rgb(255, 255, 255) solid 1px;
+    border-bottom: white solid 1px;
     user-select: none;
     font-family: "Afacad Flux", sans-serif;
     letter-spacing: 1.5px;
+    font-size: 26px;
+    list-style: none;
 }
 .container .box .ozet p{
     text-align: center;
@@ -177,33 +178,39 @@ h2{
     font-family: "Afacad Flux", sans-serif;
 }
 .container .box .btnHikayeler button{
-    padding: 10px 15px;
-    border-radius: 10px;
+    padding: 8px 12px;
+    border-radius: 5px;
     border: none;
     cursor: pointer;
     /* background: linear-gradient(to right, #ff7e5f, #feb47b); */
-    background: linear-gradient(to right, rgb(255, 64, 0), rgb(91, 24, 0));
+    background: linear-gradient(to right, rgb(255, 72, 0), rgba(122, 35, 0, 0.692));
     /* box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); */
     color: white;
-    font-weight: 500;
+    font-weight: 570;
     display: flex;
     margin-left: 200px;
-    margin-top: 60px;
+    margin-top: 62px;
     user-select: none;
     transition: all 0.7s;
     
     
 }
+
+.container .box .btnHikayeler button a{
+    color: white;
+}
+
+
 .container .box .btnHikayeler button i{
     position: relative;
-    left: 5px;
-    top: 2px;
-    color: white
+    left: 2px;
+    top: px;
+    color: white;
 }
 .container .box .btnHikayeler button:hover{
     transform: translateX(3px);
-    font-weight: 550;
-    background: linear-gradient(to right,rgb(91, 24, 0), rgb(225, 64, 0));
+    font-weight: 600;
+    background: linear-gradient(to right, rgba(122, 35, 0, 0.807), rgb(255, 72, 0));
     /* box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); */
     
 }
@@ -211,7 +218,7 @@ h2{
     position: absolute;
     margin-top: 80px;
     margin-left: 25px;
-    font-weight: 250;
+    font-weight: 5000;
     font-size: 13px;
     user-select: none;
     color: white;

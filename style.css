@@ -116,16 +116,17 @@ user-select: none;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     color: white;
-    background-color: rgb(225, 58, 3);
+    background-color: rgb(255, 68, 0);
     user-select: none;
+    box-shadow: black 0px 1px 10px;
    
  }
 
 
  .main .right .button button:hover{
-    background-color: rgb(141, 38, 0);
-    box-shadow: rgb(0, 0, 0) 0px 5px 20px;
-    text-shadow: rgb(255, 255, 255) 0px 0px 10px, 0px 0px 20px, 0px 0px 40px, 0px 0px 80px ;
+    background-color: rgb(216, 0, 0);
+    box-shadow: rgb(0, 0, 0) 2px 5px 20px;
+    text-shadow: rgb(255, 255, 255) 0px 0px 10px, 0px 0px 20px, 0px 0px 30px, 0px 0px 80px ;
     transition: .6s;
  }
 
