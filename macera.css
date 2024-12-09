@@ -302,6 +302,45 @@ h2{
     font-size: 13px;
     user-select: none;
 }
+.button-container {
+    display: flex; /* Flexbox özelliği ile elemanları yan yana sıralar */
+    justify-content: center; /* Butonları yatayda ortalar */
+    align-items: center; /* Butonları dikeyde ortalar */
+    gap: 20px; /* Butonlar arasına boşluk koyar */
+    margin-top: 20px; /* Konteynerin üstünden biraz boşluk bırakır */
+}
+
+.favorite-btn,
+.btn-onay {
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.favorite-btn:hover {
+    transform: translateY(-3px);
+    color: rgb(189, 0, 0);
+}
+
+.favorite-btn.active{
+    color: rgb(189, 0, 0);
+    border-color: black;
+}
+
+.favorite-btn i {
+    font-size: 30px;
+}
+
+.btn-onay:hover {
+    transform: translateY(-3px);
+    color: rgb(9, 149, 4);
+}
+
+.btn-onay i {
+    font-size: 30px;
+}
 
 
 
@@ -309,7 +348,49 @@ h2{
 
 
 
+/* Butonlar için genel stil */
+.tick-btn, .heart-btn {
+    font-size: 10px;
+    padding: 7px 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Butonların aralarına boşluk ekle */
+  .tick-btn {
+    margin-right: 5px; /* Sağ tarafına boşluk ekler */
+    margin-top: 10px;
+  }
+  
+  .heart-btn {
+    margin-left: 20px; /* Sol tarafına boşluk ekler */
+  }
+  .heart-btn:hover:hover{
+    transform: translateY(-3px);
+    transition: .7s;
+    font-weight: normal;
+  }
+  .tick-btn:hover{
+    transform: translateY(-4px);
+    transition: .7s;
+    font-weight: normal;
+  }
+  
 
-
-
-
+  /* Tıklanmış stil: Tick */
+  .tick-btn.active {
+    background-color: rgb(48, 199, 46);
+    border-color: green;
+    color: white;
+  }
+  
+  /* Tıklanmış stil: Heart */
+  .heart-btn.active {
+    background-color: rgb(249, 29, 29);
+    border-color: darkred;
+    color: white;
+  }
